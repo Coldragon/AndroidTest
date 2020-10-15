@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_field_empty">Error email and/or password filed can\'t be empty</string>
+    <string name="error_email_not_valid">Error email field doesn\'t contain a valid email format.</string>
+    <string name="error_wrong_password">Error input password isn\'t valid</string>
+    <string name="success_login_successfully">Login successfully</string>
+    <string name="reset_button_success">Reset input fields</string>
+</resources>

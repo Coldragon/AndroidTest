@@ -2,4 +2,6 @@
     <string name="app_name">Connect 3000</string>
     <string name="button_login">Login</string>
     <string name="button_reset">Reset</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
 </resources>
