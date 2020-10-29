@@ -1,10 +1,12 @@
-package com.example.quiztest;
+package com.example.quiztest.controller;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+
+import com.example.quiztest.R;
 
 public class MainActivity extends AppCompatActivity {
 
