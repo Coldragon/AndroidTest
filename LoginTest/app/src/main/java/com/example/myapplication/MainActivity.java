@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonLogin = findViewById(R.id.buttonLogin);
         Button buttonReset = findViewById(R.id.buttonReset);
 
-        buttonLogin.setOnClickListener((v) -> {
+        buttonLogin.setOnClickListener((View v) -> {
                 String emailString = inputEmail.getText().toString();
                 String passwordString = inputPassword.getText().toString();
 
@@ -47,13 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 }
         });
 
-        buttonReset.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                inputEmail.setText("");
-                inputPassword.setText("");
-                Toast.makeText(getApplicationContext(), getString(R.string.reset_button_success), Toast.LENGTH_SHORT).show();
-            }
+        buttonReset.setOnClickListener((View v) -> {
+            inputEmail.setText("");
+            inputPassword.setText("");
+            Toast.makeText(getApplicationContext(), getString(R.string.reset_button_success), Toast.LENGTH_SHORT).show();
         });
 
     }
