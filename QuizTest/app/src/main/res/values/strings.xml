@@ -6,7 +6,7 @@
     <string name="life_value">Current Live(s) : </string>
     <string name="_score_placeholder">0</string>
     <string name="enter_your_username">Enter your username</string>
-    <string name="valid_username">Ok</string>
+    <string name="valid_username">OK</string>
     <string name="default_input_username">Username</string>
     <string name="username">Username</string>
     <string name="preference_key_username">firstname</string>
