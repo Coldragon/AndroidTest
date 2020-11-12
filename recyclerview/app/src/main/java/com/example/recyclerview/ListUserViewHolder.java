@@ -4,8 +4,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
+
+import com.example.recyclerview.model.User;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;

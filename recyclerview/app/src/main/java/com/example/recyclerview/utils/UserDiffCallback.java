@@ -1,6 +1,8 @@
-package com.example.recyclerview;
+package com.example.recyclerview.utils;
 
 import androidx.recyclerview.widget.DiffUtil;
+
+import com.example.recyclerview.model.User;
 
 import java.util.List;
 

@@ -4,8 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.util.Log;
 
+import com.example.recyclerview.model.User;
+import com.example.recyclerview.model.UserRepository;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ItemListActivity extends AppCompatActivity implements UserListAdapter.Listener {

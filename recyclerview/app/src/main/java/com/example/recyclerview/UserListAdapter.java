@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.recyclerview.model.User;
+import com.example.recyclerview.utils.UserDiffCallback;
+
 public class UserListAdapter extends RecyclerView.Adapter<ListUserViewHolder> {
 
 	private List<User> users = new ArrayList<>();
@@ -29,7 +32,7 @@ public class UserListAdapter extends RecyclerView.Adapter<ListUserViewHolder> {
 	public ListUserViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 		Context context = parent.getContext();
 		LayoutInflater inflater = LayoutInflater.from(context);
-		View view = inflater.inflate(R.layout.activity_item_list, parent,false);
+		View view = inflater.inflate(R.layout.user_item, parent,false);
 		return new ListUserViewHolder(view);
 	}
 
