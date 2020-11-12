@@ -32,5 +32,6 @@ public class ListUserViewHolder extends RecyclerView.ViewHolder {
 			.load(user.getAvatarUrl())
 			.apply(RequestOptions.circleCropTransform())
 			.into(mImageViewAvatar);
+
 	}
 }

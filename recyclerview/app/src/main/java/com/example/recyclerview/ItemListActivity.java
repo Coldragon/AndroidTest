@@ -7,12 +7,13 @@ import android.os.Bundle;
 
 import com.example.recyclerview.model.User;
 import com.example.recyclerview.model.UserRepository;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ItemListActivity extends AppCompatActivity implements UserListAdapter.Listener {
 
 	private RecyclerView mRecyclerView;
-	private FloatingActionButton mFloatingActionButton;
+	private ExtendedFloatingActionButton mFloatingActionButton;
 	private UserListAdapter mUserListAdapter;
 	private UserRepository mUserRepository;
 

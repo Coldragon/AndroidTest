@@ -5,10 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.quiztest.BuildConfig;
 import com.example.quiztest.R;
 
 public class UsernameActivity extends AppCompatActivity {
@@ -32,6 +34,7 @@ public class UsernameActivity extends AppCompatActivity {
 				Intent intent = new Intent();
 				setResult(RESULT_OK, intent);
 				finish();
+				if(BuildConfig.DEBUG) 	Log.d("UsernameActivity", "onCreate: test");
 			}
 			else
 			{
