@@ -5,6 +5,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.example.recyclerview.model.User;
 
 import androidx.annotation.NonNull;
@@ -26,11 +28,9 @@ public class ListUserViewHolder extends RecyclerView.ViewHolder {
 	public void bind(User user, UserListAdapter.Listener callback) {
 		mTextViewUsername.setText(user.getUsername());
 		mImageButtonDelete.setOnClickListener(view -> callback.onClickDelete(user));
-
-		//		Glide.with(itemView.getContext())
-//				.load(user.getAvatarUrl())
-//				.apply(RequestOptions.circleCropTransform())
-//				.into(mImageViewAvatar);
-//
+		Glide.with(itemView.getContext())
+			.load(user.getAvatarUrl())
+			.apply(RequestOptions.circleCropTransform())
+			.into(mImageViewAvatar);
 	}
 }
